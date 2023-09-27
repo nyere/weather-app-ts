@@ -1,0 +1,36 @@
+.search-results {
+    position: absolute;
+    width: 370px;
+    top: 50%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 6px 6px;
+    border-top: none;
+    padding: 10px;
+}
+
+.search-result {
+    padding: 5px;
+    list-style-type: none;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-result:hover {
+    background-color: lightgoldenrodyellow;
+    border-radius: 6px;
+}
+
+.search-result__coordinates {
+    color: #8a8a8a;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 740px) {
+    .search-results {
+        width: 310px;
+    }
+}

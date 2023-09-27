@@ -1,0 +1,46 @@
+.metric-switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.metric-switcher__buttons {
+    display: flex;
+    flex-direction: row;
+    background-color: #c2c2c2;
+    border-radius: 6px;
+}
+
+.metric-switcher__option {
+    border-style: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.metric-switcher__option--active {
+    background-color: white;
+    
+}
+
+.metric-switcher__option--inactive {
+    cursor: pointer;
+    background-color: #c2c2c2;
+}
+
+.metric-switcher__option:disabled {
+    color: buttontext;
+}
+
+@media screen and (max-width: 740px) {
+    .metric-switcher {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+}

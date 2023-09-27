@@ -1,0 +1,17 @@
+.placeholder__image {
+    width: 580px;
+    margin: 0 auto;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+    .placeholder__image {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .placeholder__image {
+        width: 360px;
+    }
+}

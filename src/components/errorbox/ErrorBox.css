@@ -1,0 +1,25 @@
+.error-box {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .error-box__header {
+    text-align: center;
+  }
+
+  .error-box__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .error-box__icon {
+    width: 50%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .error-box {
+      width: 80%;
+    }
+  }

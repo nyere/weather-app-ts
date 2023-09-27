@@ -1,0 +1,84 @@
+  .weather-forecast {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .weather-forecast__header {
+    text-align: left;
+  }
+
+  .weather-forecast__body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .weather-forecast__title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .weather-forecast__date-time {
+    color: orangered
+  }
+  
+  .weather-forecast__info {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .weather-forecast__temperature {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  
+  .weather-forecast__description {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .weather-forecast__list {
+    border-left: 2px solid orangered;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .weather-forecast__item {
+    margin: 5px 10px;
+    font-size: 16px;
+  }
+
+  .weather-forecast__button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 0;
+  }
+  
+  .weather-forecast__button--left {
+    order: 1;
+  }
+  
+  .weather-forecast__button--right {
+    order: 3;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .weather-forecast {
+      width: 80%;
+    }
+    .weather-forecast__body {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

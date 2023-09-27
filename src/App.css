@@ -1,0 +1,12 @@
+.weather-data {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .weather-data {
+    flex-direction: column;
+  }
+}
